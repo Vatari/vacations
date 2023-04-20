@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
 import Tours from "./Tours";
 
-const url = "https://course-api.com/react-tours-project";
+const url = "http://b8e00a7b5ca8.sn.mynetname.net:3012/jsonstore/tours"; //external API URL
+
 function App() {
   const [loading, setLoading] = useState(true);
   const [tours, setTours] = useState([]);

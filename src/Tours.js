@@ -7,7 +7,7 @@ const Tours = ({ tours, removeTour }) => {
         <h2>Our Vacations</h2>
         <div className="underline"></div>
         <div>
-          {tours.map((v) => {
+          {Object.values(tours).map((v) => {
             return <Tour key={v.id} {...v} removeTour={removeTour} />;
           })}
         </div>
