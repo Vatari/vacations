@@ -36,6 +36,19 @@ function App() {
       </main>
     );
   }
+
+  if (tours.length === 0) {
+    return (
+      <main>
+        <div className="title">
+          <h2>No vacations left</h2>
+          <button className="btn" onClick={fetchData}>
+            Refresh vacations
+          </button>
+        </div>
+      </main>
+    );
+  }
   return (
     <main>
       <Tours tours={tours} removeTour={removeTour} />
